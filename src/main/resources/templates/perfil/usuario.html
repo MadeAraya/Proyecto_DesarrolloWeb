@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace= "~{layout/plantillaPerfil :: head}">
+
+        <title>Rainbow World</title>
+
+    </head>
+
+    <body>
+        <header th:replace= "~{layout/plantillaPerfil :: header}"/>
+
+        <section th:replace="~{layout/plantillaPerfil  :: espacio}"></section>
+        <section th:replace="~{layout/plantillaPerfil  :: tituloMisPedidos}"></section>
+        <section th:replace="~{layout/plantillaPerfil  :: pedidos}"></section>
+
+        <section th:replace="~{layout/plantillaPerfil  :: espacio}"></section>
+        <section th:replace="~{layout/plantillaPerfil  :: tituloDeseos}"></section>
+        <section th:replace="~{layout/plantillaPerfil  :: deseos}"></section>
+
+        <section th:replace="~{layout/plantillaPerfil  :: espacio}"></section>
+        <section th:replace="~{layout/plantillaPerfil  :: tituloRec}"></section>
+        <section th:replace="~{layout/plantillaPerfil  :: rec}"></section>
+
+        <section th:replace="~{layout/plantillaPerfil  :: espacio}"></section>
+        <section th:replace="~{layout/plantillaPerfil  :: chatbot}"></section>
+
+        <section th:replace="~{layout/plantillaPerfil  :: espacio2}"></section>
+        <section th:replace="~{layout/plantillaPerfil  :: footer}"></section>
+    </body>
+</html>

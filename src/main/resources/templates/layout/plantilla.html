@@ -32,7 +32,12 @@
                             <a class="nav-link active" style="color: white;" aria-current="page" href="#">Belleza</a>
                             <a href="#" style="color: white;margin-top:10px;"><span style="margin-top: 20px; margin-right: 20px; margin-left: 15px; font-size: 20px;"><i class="fa fa-shopping-cart "></i></span>
                             </a>
-                            <a href="#" style="color: white;margin-top:10px;"><span style="font-size: 20px;"><i class="fas fa-user-circle "></i></span></a>
+                            <a class="nav-menu-link nav-link" th:href="@{/perfil}" style="color: white; margin-top: 5px;">
+                                <span style="font-size: 20px; margin-left: 5px; margin-top: -5px;"><i class="fas fa-user-circle"></i></span>
+                            </a>
+
+
+
 
                         </div>
                     </div>
@@ -40,8 +45,8 @@
             </nav>
         </header>
 
-            <section th:fragment="frase" class="frase">
-                <div class="container-fluid" style=" display: flex; justify-content: center; align-items: center; ">
+        <section th:fragment="frase" class="frase">
+            <div class="container-fluid" style=" display: flex; justify-content: center; align-items: center; ">
                 <div style="width: 400px; padding-top: 50px; text-align: center; ">  <p> <i class="fas fa-quote-left" style="padding-right: 30px;"></i>Un lugar donde la magia del universo del anime se fusiona 
                         con la emoción de los cómics, la innovación de la tecnología, la comodidad del hogar y el 
                         encanto de la belleza, creando un espacio donde tus pasiones cobran vida y 
@@ -49,62 +54,62 @@
                         tu lugar en este universo de posibilidades.<i class="fas fa-quote-right" style="padding-left: 30px;" ></i></p>
                 </div>
             </div>
-            </section>
-        
+        </section>
+
         <section th:fragment="titulo" class="titulo">
-              <h3 style="padding-left: 30px;">Nuestros Productos</h3> <hr style="margin-top: -20px; margin-left: 300px;">
+            <h3 style="padding-left: 30px;">Nuestros Productos</h3> <hr style="margin-top: -20px; margin-left: 300px;">
 
         </section>
-        
+
         <section style="height: 100px;" th:fragment="productos" class="productos" >
             <div class="card" style="width: 13rem; margin-left: 60px; float:left; ">
                 <img src="..." class="card-img-top" alt="...">
-                <div class="card-body" >
-                    <h5 class="card-title" style="text-align: center; ">Tecnologia</h5>
-                </div>
-            </div>
-            <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body" >
-                    <h5 class="card-title" style="text-align: center; ">Comics</h5>
-                </div>
-            </div>
-            <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body" >
-                    <h5 class="card-title" style="text-align: center; ">Belleza</h5>
-                </div>
-            </div>
-            <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body" >
-                    <h5 class="card-title" style="text-align: center; ">Hogar</h5>
-                </div>
-            </div>
-            <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body" >
-                    <h5 class="card-title" style="text-align: center; ">Anime</h5>
-                </div>
-            </div>
-            
-        </section>
-            
-        
-
-            <footer th:fragment="footer" style="background-color: rgba(39, 15, 59); height:56px; ">
-                <div class="container">
-                    <div class="col">
-                        <p style="color: white;">
-                            &COPY [[#{plantilla.derechos}]]
-                            <i class="fab fa-instagram" style="font-size: 35px; padding-left: 670px; padding-top: 5px;"></i>
-                            <i class="fab fa-facebook" style="font-size: 35px; padding-left:15px; padding-top: 5px;"></i>
-                            <i class="fab fa-twitter" style="font-size: 35px; padding-left:15px; padding-top: 5px;"></i>
-
-                        </p>
-
+                    <div class="card-body" >
+                        <h5 class="card-title" style="text-align: center; ">Tecnologia</h5>
                     </div>
+            </div>
+            <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
+                <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body" >
+                        <h5 class="card-title" style="text-align: center; ">Comics</h5>
+                    </div>
+            </div>
+            <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
+                <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body" >
+                        <h5 class="card-title" style="text-align: center; ">Belleza</h5>
+                    </div>
+            </div>
+            <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
+                <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body" >
+                        <h5 class="card-title" style="text-align: center; ">Hogar</h5>
+                    </div>
+            </div>
+            <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
+                <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body" >
+                        <h5 class="card-title" style="text-align: center; ">Anime</h5>
+                    </div>
+            </div>
+
+        </section>
+
+
+
+        <footer th:fragment="footer" style="background-color: rgba(39, 15, 59); height:56px; ">
+            <div class="container">
+                <div class="col">
+                    <p style="color: white;">
+                        &COPY [[#{plantilla.derechos}]]
+                        <i class="fab fa-instagram" style="font-size: 35px; padding-left: 670px; padding-top: 5px;"></i>
+                        <i class="fab fa-facebook" style="font-size: 35px; padding-left:15px; padding-top: 5px;"></i>
+                        <i class="fab fa-twitter" style="font-size: 35px; padding-left:15px; padding-top: 5px;"></i>
+
+                    </p>
+
                 </div>
-            </footer>
+            </div>
+        </footer>
     </body>
 </html>
