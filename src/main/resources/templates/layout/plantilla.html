@@ -10,14 +10,16 @@
         <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
         <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>        
     </head>
+
+
     <body>
 
 
-        <img src="image (23).png" alt=""/>
+
         <header th:fragment="header" class="header" >
 
-            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 40px;">
-                <div class="container-fluid" style="background-color: rgba(39, 15, 59); color: white; height: 119px; padding-top: 20px;" >
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 60px;">
+                <div class="container-fluid" style="background-color: rgba(39, 15, 59); color: white; height: 119px; " >
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -32,19 +34,37 @@
                             <a class="nav-link active" style="color: white;" aria-current="page" href="#">Belleza</a>
                             <a href="#" style="color: white;margin-top:10px;"><span style="margin-top: 20px; margin-right: 20px; margin-left: 15px; font-size: 20px;"><i class="fa fa-shopping-cart "></i></span>
                             </a>
-                            <a class="nav-menu-link nav-link" th:href="@{/perfil}" style="color: white; margin-top: 5px;">
-                                <span style="font-size: 20px; margin-left: 5px; margin-top: -5px;"><i class="fas fa-user-circle"></i></span>
-                            </a>
-
-
-
+                            <a href="perfil" style="color: white;margin-top:10px;"><span style="font-size: 20px;"><i class="fas fa-user-circle "></i></span></a>
 
                         </div>
                     </div>
+
                 </div>
             </nav>
         </header>
 
+        <section th:fragment="carousel" class="carousel">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" >
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="https://img.freepik.com/vector-premium/fondo-tecnologia-digital-compras-linea_332666-36.jpg" height="600px" class="d-block w-100" alt="..." >
+                            <div class="carousel-caption d-none d-md-block" style="padding-left: 500px; ">
+                                <h1 style="color: white; padding-top: 500px; background-color: rgba(42, 42, 42, 0.6); width: 550px; height: 220px; padding-top: 20px; text-align: justify; border-radius: 20px; padding-left: 20px; padding-right: 20px;">Todo lo que necesitas, 
+                                    en un solo espacio <br><br>
+                                <button type="button" class="btn btn-outline-light"  style="background-color: #591B69; margin-left: 340px;">Contáctanos</button>
+                                </h1>
+                                
+                            </div>
+                    </div>
+
+
+                </div>
+        </section>
         <section th:fragment="frase" class="frase">
             <div class="container-fluid" style=" display: flex; justify-content: center; align-items: center; ">
                 <div style="width: 400px; padding-top: 50px; text-align: center; ">  <p> <i class="fas fa-quote-left" style="padding-right: 30px;"></i>Un lugar donde la magia del universo del anime se fusiona 
@@ -60,34 +80,35 @@
             <h3 style="padding-left: 30px;">Nuestros Productos</h3> <hr style="margin-top: -20px; margin-left: 300px;">
 
         </section>
-
-        <section style="height: 100px;" th:fragment="productos" class="productos" >
-            <div class="card" style="width: 13rem; margin-left: 60px; float:left; ">
-                <img src="..." class="card-img-top" alt="...">
+        div class="col-md-6">
+        </div>
+        <section style="height: 250px;" th:fragment="productos" class="productos" >
+            <div  class="card" style="width: 13rem; margin-left: 60px; float:left;  ">
+                <img src="https://www.eltiempo.com/files/article_main_1200/uploads/2023/09/06/64f8879c37949.png" style="height: 130px;" class="card-img-top" alt="...">
                     <div class="card-body" >
                         <h5 class="card-title" style="text-align: center; ">Tecnologia</h5>
                     </div>
             </div>
-            <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card" style="width: 13rem; margin-left: 30px;  float:left; ">
+                <img src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2015/02/dc-comics-universe.jpg?fit=1280%2C800&quality=70&strip=all&ssl=1" style="height: 130px;" class="card-img-top" alt="...">
                     <div class="card-body" >
                         <h5 class="card-title" style="text-align: center; ">Comics</h5>
                     </div>
             </div>
             <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="https://revistamav.com/wp-content/uploads/2020/10/2-5-1024x819.png" style="height: 130px;" class="card-img-top" alt="...">
                     <div class="card-body" >
                         <h5 class="card-title" style="text-align: center; ">Belleza</h5>
                     </div>
             </div>
             <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="https://thumbs.dreamstime.com/b/vistas-la-decoraci%C3%B3n-variada-de-tienda-interior-del-centro-comercial-accesorios-para-el-hogar-y-productos-en-planta-dom%C3%A9stica-245100232.jpg" style="height: 130px;" class="card-img-top" alt="...">
                     <div class="card-body" >
                         <h5 class="card-title" style="text-align: center; ">Hogar</h5>
                     </div>
             </div>
             <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="https://muyadictivo.com/wp-content/uploads/2022/07/mejores-sitios-para-comprar-figuras-de-anime-japonesas.webp"  class="card-img-top" alt="...">
                     <div class="card-body" >
                         <h5 class="card-title" style="text-align: center; ">Anime</h5>
                     </div>
@@ -102,7 +123,7 @@
                 <div class="col">
                     <p style="color: white;">
                         &COPY [[#{plantilla.derechos}]]
-                        <i class="fab fa-instagram" style="font-size: 35px; padding-left: 670px; padding-top: 5px;"></i>
+                        <i class="fab fa-instagram" style="font-size: 35px; padding-left: 650px; padding-top: 5px;"></i>
                         <i class="fab fa-facebook" style="font-size: 35px; padding-left:15px; padding-top: 5px;"></i>
                         <i class="fab fa-twitter" style="font-size: 35px; padding-left:15px; padding-top: 5px;"></i>
 
