@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+    <head th:fragment="head">
+
+        <title>Rainbow World</title>
+        <meta charset="UTF-8"/>
+        <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+        <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+
+    </head>
+    <body>
+        <header th:fragment="header" class="header" >
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 60px;">
+                <div class="container-fluid" style="background-color: rgba(39, 15, 59); color: white; height: 119px; " >
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 740px; " >
+                        <div class="navbar-nav">
+                            <a class="nav-link active" style="color: white;" aria-current="page" th:href="@{/}" >Inicio</a>
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="#">Anime</a>
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="#">Tecnologia</a>
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="#">Comics</a>
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="#">Hogar</a>
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="belleza">Belleza</a>
+                            <a href="#" style="color: white;margin-top:10px;"><span style="margin-top: 20px; margin-right: 20px; margin-left: 15px; font-size: 20px;"><i class="fa fa-shopping-cart "></i></span>
+                            </a>
+                            <a href="perfil" style="color: white;margin-top:10px;"><span style="font-size: 20px;"><i class="fas fa-user-circle "></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg" class="d-block w-100" alt="..." style="max-height: 400px; object-fit: cover;"/>
+                        <div class="carousel-caption d-none d-md-block" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; justify-content: center; align-items: center;">
+                            <h1 style="color: white; background-color: rgba(42, 42, 42, 0.6); width: 550px; padding: 20px; text-align: center; border-radius: 20px;">Belleza</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section th:fragment="tituloMaquillaje" class="tituloMaquillaje">
+            <br></br>
+            <h3 style="padding-left: 30px;">Maquillaje</h3> <hr style="margin-top: -20px; margin-left: 300px;"/>
+            <br></br>
+        </section>
+
+        <section style="height: 100px;" th:fragment="maquillaje" class="maquillaje" >
+            <div class="card" style="width: 12rem; margin-left: 60px; float:left; ">
+                <img src="https://i1.wp.com/lacarenes.com/wp-content/uploads/2019/11/FENTY-BEAUTY-Killawatt-Freestyle-Highlighter-Ruby-Richez-1.png?fit=1000%2C1000&ssl=1" class="card-img-top" style="width: 100%; height: 200px;" alt="Rubor"/>
+                <div class="card-body">
+                    <button class="btn btn-success btn-block text-center" style="font-size: 19px; padding: 5px;">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 12rem; margin-left: 60px; float:left; ">
+                <img src="https://feelunique.com/cdn-cgi/image/quality=75,format=auto,metadata=none,dpr=1/img/products/170536/rem_beauty_on_your_collar_liquid_lipstick_9_7ml-1673511482.jpg" class="card-img-top" style="width: 100%; height: 200px;" alt="LipTint">
+                    <div class="card-body">
+                        <button class="btn btn-success btn-block text-center" style="font-size: 19px; padding: 5px;">Agregar al carrito</button>
+                    </div>
+            </div>
+
+            <div class="card" style="width: 12rem; margin-left: 60px; float:left; ">
+                <img src="https://feelunique.com/cdn-cgi/image/quality=75,format=auto,metadata=none,dpr=1/img/products/170603/rem_beauty_midnight_shadows_eyeshadow_palette-1675585075.jpg" class="card-img-top" style="width: 100%; height: 200px;" alt="Paleta">
+                    <div class="card-body">
+                        <button class="btn btn-success btn-block text-center" style="font-size: 19px; padding: 5px;">Agregar al carrito</button>
+                    </div>
+            </div>
+
+            <div class="card" style="width: 12rem; margin-left: 60px; float:left; ">
+                <img src="https://media.glamour.com/photos/5f6292a99e2b85b0bd695b6a/1:1/w_2560%2Cc_limit/rare%252520beauty%252520blush%252520happy.png" class="card-img-top" style="width: 100%; height: 200px;" alt="Rare beauty rubor">
+                    <div class="card-body">
+                        <button class="btn btn-success btn-block text-center" style="font-size: 19px; padding: 5px;">Agregar al carrito</button>
+                    </div>
+            </div>
+
+            <div class="card" style="width: 12rem; margin-left: 60px; float:left; ">
+                <img src="https://media1.popsugar-assets.com/files/thumbor/jD1JqIDgqoQSbdLRso5zz0_0364/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2020/09/09/738/n/1922153/b7365f560c095e09_netimge36Bop/i/About-Rare-Beauty-Foundation-Formula.jpg" class="card-img-top" style="width: 100%; height: 200px;" alt="Rare beauty base">
+                    <div class="card-body">
+                        <button class="btn btn-success btn-block text-center" style="font-size: 19px; padding: 5px;">Agregar al carrito</button>                       
+                    </div>
+            </div>
+        </section>
+
+        
+        <section th:fragment="tituloSkincare" class="tituloSkincare" style="clear: both;">
+            <br><br>
+            <h3 style="padding-left: 30px;">Skincare</h3> <hr style="margin-top: -20px; margin-left: 300px;"/>
+            <br><br>
+        </section>
+
+        <section style="height: 100px; margin-bottom: 200px;" th:fragment="skincare" class="skincare" >
+            <div class="card" style="width: 12rem; margin-left: 60px; float:left; ">
+                <img src="https://media.justo.mx/products/4005900265227_1.jpg" class="card-img-top" style="width: 100%; height: 200px;" alt="Bloqueador Eucerin"/>
+                <div class="card-body">
+                    <button class="btn btn-success btn-block text-center" style="font-size: 19px; padding: 5px;">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 12rem; margin-left: 60px; float:left; ">
+                <img src="https://image.harrods.com/clinique-superprimer-universal-face-primer_15421741_32008214_2048.jpg" class="card-img-top" style="width: 100%; height: 200px;" alt="Primer Clinique">
+                    <div class="card-body">
+                        <button class="btn btn-success btn-block text-center" style="font-size: 19px; padding: 5px;">Agregar al carrito</button>
+                    </div>
+            </div>
+
+            <div class="card" style="width: 12rem; margin-left: 60px; float:left; ">
+                <img src="https://i5.walmartimages.com/asr/fa050fd7-4c62-4694-ac27-d28748a393f8_1.5f6dff2fcb1a5ec2f9b1437aea5dbd6f.jpeg" class="card-img-top" style="width: 100%; height: 200px;" alt="Crema Hidratante CeraVe">
+                    <div class="card-body">
+                        <button class="btn btn-success btn-block text-center" style="font-size: 19px; padding: 5px;">Agregar al carrito</button>
+                    </div>
+            </div>
+
+            <div class="card" style="width: 12rem; margin-left: 60px; float:left; ">
+                <img src="https://assets.beautyhub.co.ke/wp-content/uploads/2022/05/02171823/tocobo_bio_watery_sun_cream_spf50_50ml.jpg" class="card-img-top" style="width: 100%; height: 200px;" alt="Bloqueador Tocobo">
+                    <div class="card-body">
+                        <button class="btn btn-success btn-block text-center" style="font-size: 19px; padding: 5px;">Agregar al carrito</button>
+                    </div>
+            </div>
+
+            <div class="card" style="width: 12rem; margin-left: 60px; float:left; ">
+                <img src="https://skincarehero.com/wp-content/uploads/2021/09/The_Ordinary_Glycolic_Acid_7_Toning_Solution.png" class="card-img-top" style="width: 100%; height: 200px;" alt="Glycolic Acid The Ordinary">
+                    <div class="card-body">
+                        <button class="btn btn-success btn-block text-center" style="font-size: 19px; padding: 5px;">Agregar al carrito</button>
+                    </div>
+            </div>
+        </section>
+        
+        <section th:fragment="opciones" class="opciones d-flex align-items-center justify-content-start" style="clear: both; background-color: #ccc; height: 170px;">
+            <div class="text-center">
+                <p class="d-inline-block fs-4" style="color: black; padding-left: 300px;"> 
+                    <strong><i class="bi bi-truck"></i> Envíos a domicilio</strong>
+                </p>
+                <p class="d-inline-block fs-4" style="color: black; padding-left: 300px;"> 
+                    <strong><i class="bi bi-geo-alt-fill"></i> Retiro en tienda</strong>
+                </p>
+                <p class="d-inline-block fs-4" style="color: black; padding-left: 300px;"> 
+                    <strong><i class="bi bi-cash-stack"></i> Pago seguro</strong>
+                </p>
+            </div>
+        </section>
+    </body>
+
+    <footer th:fragment="footer" style="background-color: rgba(39, 15, 59); height:56px;">
+            <div class="container">
+                <div class="col">
+                    <p style="color: white;">
+                        &COPY Ranbow World Derechos Reservados 2024
+                        <i class="fab fa-instagram" style="font-size: 35px; padding-left: 650px; padding-top: 5px;"></i>
+                        <i class="fab fa-facebook" style="font-size: 35px; padding-left:15px; padding-top: 5px;"></i>
+                        <i class="fab fa-twitter" style="font-size: 35px; padding-left:15px; padding-top: 5px;"></i>
+                    </p>
+                </div>
+            </div>
+        </footer>
+</html>

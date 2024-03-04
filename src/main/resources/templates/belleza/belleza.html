@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace= "~{layout/plantillaBelleza :: head}">
+        <title>Rainbow World</title>
+    </head>
+    <body>
+        <header th:replace= "~{layout/plantillaBelleza :: header}"/>
+        <section th:replace= "~{layout/plantillaBelleza :: tituloMaquillaje}"></section>
+        <section th:replace= "~{layout/plantillaBelleza :: maquillaje}"></section>
+        <section th:replace= "~{layout/plantillaBelleza :: tituloSkincare}"></section>
+        <section th:replace= "~{layout/plantillaBelleza :: skincare}"></section>
+        <section th:replace= "~{layout/plantillaBelleza :: opciones}"></section>
+        <footer th:replace= "~{layout/plantillaBelleza :: footer}"/>
+    </body>
+</html>
