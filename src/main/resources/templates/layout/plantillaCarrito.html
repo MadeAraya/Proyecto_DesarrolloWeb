@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+    <head th:fragment="head">
+
+        <title>Rainbow World</title>
+        <meta charset="UTF-8"/>
+        <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+        <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+
+    </head>
+
+    <body>
+
+        <img src="image (23).png" alt=""/>
+        <header th:fragment="header" class="header" style="height:90px;" >
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 50px;">
+                <div class="container-fluid" style="background-color: rgba(145, 126, 149); color: white; height: 119px; padding-top: 20px;">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center"> 
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRyRXNk-Yk7jqb4v0X9rAhSZGDtrevVgJQ7g&usqp=CAU" alt="Foto" 
+                                 style="border-radius: 50%; width: 90px; height: 90px; margin-right: 20px; margin-bottom: -50px; margin-left: 50px;"> 
+                                <h5 style="margin-top: 15px; margin-left: 15px; margin-right: 15px;">Usuario_626</h5>
+                        </div>
+                        <div class="d-flex align-items-center ml-auto">
+                            <div class="navbar-nav d-flex align-items-center">
+                                <a href="#" style="color: white; margin-right: 15px;"> 
+                                    <span style="font-size: 20px;"> 
+                                        <i class="fa fa-cog"></i>
+                                    </span>
+                                </a>
+                                <a href="#" style="color: white; margin-left: 15px; margin-right:670px;"> 
+                                    <span style="font-size: 20px;"> 
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <a th:href="@{/}" style="color: white; margin-right: 20px;"> 
+                                <span style="font-size: 20px;"> 
+                                    <i class="fa fa-sign-out-alt"></i>
+                                </span>
+                            </a>
+                            <h5 th:href="@{/}" style="margin-right: 30px; color: white; text-decoration: none;">Volver a Inicio</h5>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section th:fragment="menu" class="menu">
+        <nav  class="navbar navbar-expand-lg bg-body-tertiary" style="height: 20px;">
+                <div class="container-fluid" style="background-color: rgba(39, 15, 59); color: white; height: 30px; " >
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 440px; " >
+                        <div class="navbar-nav">
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="anime">Anime</a>
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="#">Tecnologia</a>
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="#">Comics</a>
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="hogar">Hogar</a>
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="belleza">Belleza</a> 
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        

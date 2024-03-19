@@ -27,12 +27,12 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 740px; " >
                         <div class="navbar-nav">
                             <a class="nav-link active" style="color: white;" aria-current="page" href="@{/}" >Inicio</a>
-                            <a class="nav-link active" style="color: white;" aria-current="page" href="#">Anime</a>
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="anime">Anime</a>
                             <a class="nav-link active" style="color: white;" aria-current="page" href="#">Tecnologia</a>
                             <a class="nav-link active" style="color: white;" aria-current="page" href="#">Comics</a>
                             <a class="nav-link active" style="color: white;" aria-current="page" href="hogar">Hogar</a>
                             <a class="nav-link active" style="color: white;" aria-current="page" href="belleza">Belleza</a>
-                            <a href="#" style="color: white;margin-top:10px;"><span style="margin-top: 20px; margin-right: 20px; margin-left: 15px; font-size: 20px;"><i class="fa fa-shopping-cart "></i></span>
+                            <a href="carrito" style="color: white;margin-top:10px;"><span style="margin-top: 20px; margin-right: 20px; margin-left: 15px; font-size: 20px;"><i class="fa fa-shopping-cart "></i></span>
                             </a>
                             <a href="perfil" style="color: white;margin-top:10px;"><span style="font-size: 20px;"><i class="fas fa-user-circle "></i></span></a>
 
@@ -81,7 +81,7 @@
         </div>
         <section style="height: 250px;" th:fragment="productos" class="productos" >
             <div  class="card" style="width: 13rem; margin-left: 60px; float:left;  ">
-                <img src="https://www.eltiempo.com/files/article_main_1200/uploads/2023/09/06/64f8879c37949.png" style="height: 130px;" class="card-img-top" alt="...">
+                <img src="https://www.usatoday.com/gcdn/presto/2023/09/12/USAT/6cf3be59-7123-4b38-bab5-1ccba07fe9c3-VPC_APPLE_IPHONE_15_courtesy_apple.jpg?width=1280&height=720&fit=crop&format=pjpg&auto=webp" style="height: 130px;" class="card-img-top" alt="...">
                     <div class="card-body" >
                         <h5 class="card-title" style="text-align: center; ">Tecnologia</h5>
                     </div>
@@ -104,12 +104,14 @@
                         <h5 class="card-title" style="text-align: center; ">Hogar</h5>
                     </div>
             </a>
-            <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
+            <a href="anime" class="card" style="width: 13rem; margin-left: 30px; float:left; text-decoration: none;">
+                
                 <img src="https://muyadictivo.com/wp-content/uploads/2022/07/mejores-sitios-para-comprar-figuras-de-anime-japonesas.webp"  class="card-img-top" alt="...">
                     <div class="card-body" >
                         <h5 class="card-title" style="text-align: center; ">Anime</h5>
                     </div>
-            </div>
+            </a>
+            
 
         </section>
 
