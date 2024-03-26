@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace= "~{layout/plantillaListaDeseos :: head}">
+
+        <title>Rainbow World</title>
+
+    </head>
+
+    <body>
+        <header th:replace= "~{layout/plantillaListaDeseos :: header}"/>
+
+        <section th:replace="~{layout/plantillaListaDeseos  :: tituloDeseos}"></section>
+
+        <div th:each="deseo : ${listaDeseos}" class="card position-relative" style="width: 10rem; margin-left: 60px; float:left; ">
+            <i class="fas fa-heart position-absolute" style="color: red; top: 5px; left: 5px; font-size: 1.5em;"></i>
+            <img th:src="${deseo.rutaImagen}" class="card-img-top" style="width: 100%; height: 150px;" alt="Enviado">
+                <div class="card-body">
+                    <button class="btn btn-primary btn-block" style="margin-top: 0px; font-size: 14px; height: 25px; padding: 5px; text-align: center;">Agregar al carrito</button>
+                </div>
+        </div>
+
+        <section th:replace="~{layout/plantillaListaDeseos  :: espacio2}"></section>       
+
+        <section th:replace="~{layout/plantillaListaDeseos :: footer}"></section>
+
+    </body>
+</html>
+
